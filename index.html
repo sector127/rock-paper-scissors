@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="root">
+      <div class="scoreboard">
+        <div class="game-title">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="score">
+          <span class="score-title">SCORE</span>
+          <span id="current-score" class="current-score">12</span>
+        </div>
+      </div>
+      <div id="picks" class="picks hidden">
+        <span id="player-pick" class="pick">YOU PICKED</span>
+        <span id="house-pick" class="pick">HOUSE PICKED</span>
+      </div>
+      <div id="buttons" class="buttons">
+        <div id="paperEl" class="paper options">
+          <button id="paper" class="paper-btn color-btn"></button>
+        </div>
+        <div id="scissorsEl" class="scissors options">
+          <button id="scissors" class="scissors-btn color-btn"></button>
+        </div>
+        <div id="rockEl" class="rock options">
+          <button id="rock" class="rock-btn color-btn"></button>
+        </div>
+        <div id="result" class="result hidden">
+          <span id="result-text" class="result-text">YOU LOSE</span>
+          <button id="play-again" class="play-again">PLAY AGAIN</button>
+        </div>
+        <div id="aiEl" class="ai options hidden">
+          <div id="ai-pick" class=""></div>
+        </div>
+      </div>
+      <div class="rules-container">
+        <button id="rules" class="rules">RULES</button>
+      </div>
+      <div class="modal hidden">
+        <div class="modal-header">
+          <span class="modal-title">RULES</span>
+          <button id="close" class="close-modal">&times;</button>
+        </div>
+        <img src="./images/image-rules.svg" alt="rules" />
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+  </body>
+</html>
