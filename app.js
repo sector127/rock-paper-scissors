@@ -71,7 +71,7 @@ const lose = () => {
   score = 0;
   setTimeout(() => {
     aiEl.classList.add("winner");
-  }, 1800);
+  }, 2000);
 };
 
 const win = () => {
@@ -81,7 +81,7 @@ const win = () => {
     paperEl.classList.add("winner");
     scissorsEl.classList.add("winner");
     rockEl.classList.add("winner");
-  }, 1800);
+  }, 2000);
 };
 
 playAgainBtn.addEventListener("click", () => {
