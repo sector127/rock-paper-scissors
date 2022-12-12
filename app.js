@@ -69,11 +69,19 @@ const play = (pick) => {
 const lose = () => {
   resultText.innerHTML = "YOU LOSE";
   score = 0;
+  setTimeout(() => {
+    aiEl.classList.add("winner");
+  }, 1800);
 };
 
 const win = () => {
   resultText.innerHTML = "YOU WIN";
   score += 1;
+  setTimeout(() => {
+    paperEl.classList.add("winner");
+    scissorsEl.classList.add("winner");
+    rockEl.classList.add("winner");
+  }, 1800);
 };
 
 playAgainBtn.addEventListener("click", () => {
@@ -85,10 +93,10 @@ playAgainBtn.addEventListener("click", () => {
   buttons.style.backgroundPosition = "center";
   picks.classList.add("hidden");
   aiBtn.classList.remove(`${AI}-btn`, "color-btn");
-  aiEl.classList.remove(`${AI}`);
-  paperEl.classList.remove("hidden");
-  scissorsEl.classList.remove("hidden");
-  rockEl.classList.remove("hidden");
+  aiEl.classList.remove(`${AI}`, "winner");
+  paperEl.classList.remove("hidden", "winner");
+  scissorsEl.classList.remove("hidden", "winner");
+  rockEl.classList.remove("hidden", "winner");
   aiEl.classList.add("hidden");
   paperBtn.disabled = false;
   scissorsBtn.disabled = false;

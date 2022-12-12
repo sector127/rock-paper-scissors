@@ -3,7 +3,8 @@
 }
 
 html {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 .root {
-  background: #1f3354;
+  background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,6 +47,8 @@ body {
 }
 
 .game-title p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 700;
   margin: -5px 0;
@@ -66,12 +69,16 @@ body {
 .score-title {
   color: #364894;
   font-weight: 700;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .current-score {
   color: #56526b;
   font-size: 45px;
   font-weight: 700;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .picks {
@@ -82,9 +89,11 @@ body {
 }
 
 .pick {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 700;
   text-shadow: 0px 0px 5px #000;
   letter-spacing: 3px;
 }
@@ -169,19 +178,23 @@ body {
 }
 
 .result-text {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .play-again {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 200px;
   display: flex;
   margin: 10px;
   height: 40px;
   align-items: center;
   color: #1f3354;
-  font-weight: 900;
+  font-weight: 700;
   justify-content: center;
   border-radius: 10px;
   border: none;
@@ -194,13 +207,20 @@ body {
   transform: translateY(1px);
 }
 
+.winner {
+  box-shadow: 0 0 0 50px rgb(255 255 255 / 3%),
+    0 0 0 100px rgb(230 230 230 / 3%), 0 0 0 150px rgb(255 255 255 / 4%);
+}
+
 .rules {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   bottom: 30px;
   right: 30px;
   color: #fff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   border: 2px solid #ccc;
   background: transparent;
   padding: 5px;
@@ -217,6 +237,8 @@ body {
 }
 
 .show-modal {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
@@ -263,6 +285,8 @@ body {
 }
 
 .modal-title {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #393e59;
   font-size: 30px;
   font-weight: 700;
