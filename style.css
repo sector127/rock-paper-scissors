@@ -4,7 +4,6 @@
 
 html {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -30,8 +29,7 @@ body {
 
 .scoreboard {
   border: 3px solid #5a6680;
-  min-width: 700px;
-  width: auto;
+  width: 700px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -48,7 +46,6 @@ body {
 
 .game-title p {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: 700;
   margin: -5px 0;

@@ -1,0 +1,18 @@
+@media (max-width: 720px) {
+  .scoreboard {
+    max-width: 320px;
+    width: auto;
+  }
+  .buttons {
+    max-width: 320px;
+    background-size: 50%;
+  }
+  .options {
+    margin: 0 auto;
+  }
+  .color-btn {
+    width: 120px;
+    height: 120px;
+    background-size: 50%;
+  }
+}
